@@ -1,0 +1,17 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  --purple: #b876bc;
+  height: 100vh;
+  padding: 50px;
+  margin: 0;
+  background: var(--white);
+  color: white;
+}
+
+h1 {
+  font-size: 30px;
+  color: black;
+}
