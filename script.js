@@ -17,7 +17,7 @@ class Type extends React.Component {
 ReactDOM.render(
 React.createElement("div", null,
 React.createElement(Type, {
-  strings: "Pika pika. <br> \u2013 Jasper Chung",
+  strings: "Pika pika.",
   loop: true,
   loopDelay: 5000,
   speed: 40 })),
