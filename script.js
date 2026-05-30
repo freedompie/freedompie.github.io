@@ -1,3 +1,6 @@
+
+
+
 //-- View full TypeIt documentation at https://typeitjs.com.
 
 class Type extends React.Component {
@@ -10,17 +13,26 @@ class Type extends React.Component {
   }
 
   render() {
-    return React.createElement("span", { ref: el => {this.el = el;} }, this.props.children);
-  }}
-
+    return React.createElement("span", { ref: el => { this.el = el; } }, this.props.children);
+  }
+}
 
 ReactDOM.render(
-React.createElement("div", null,
-React.createElement(Type, {
-  strings: "Pika pika.",
-  loop: true,
-  loopDelay: 5000,
-  speed: 40 })),
-
-
-document.getElementById('root'));
+  React.createElement("div", null,
+    React.createElement(Type, {
+      strings: [
+        "Jasper Chung",
+        "Part-time C++ programmer",
+        "Changing hearts and minds",
+        "Trying his best not to get fired"
+      ],
+      speed: 100,
+      breakLines: false,
+      autoStart: true,
+      loop: true,
+      nextStringDelay: 1000,
+      deleteSpeed: 50,
+    })
+  ),
+  document.getElementById('cycling-title')
+);
