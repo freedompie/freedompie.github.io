@@ -22,9 +22,9 @@ ReactDOM.render(
     React.createElement(Type, {
       strings: [
         "Jasper Chung",
-        "Part-time C++ programmer",
         "Changing hearts and minds",
-        "Trying his best not to get fired"
+        "Trying his best not to get laid off",
+        "Pika pika"
       ],
       speed: 100,
       breakLines: false,
